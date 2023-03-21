@@ -1,0 +1,91 @@
+.search-btn {
+  cursor: pointer;
+}
+.search-form-wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 100vmax;
+  aspect-ratio: 1;
+  width: max(50vw, 22rem);
+  z-index: 1000;
+  width: 80%;
+  width: min(80%, 40rem);
+
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(11.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.search-form {
+  background-color: var(--black);
+  overflow: hidden;
+  border-radius: 100vmax;
+  width: min(90%, 20rem);
+  display: grid;
+  grid-template-columns: 70% auto;
+  border: 3px solid var(--black);
+}
+.search-form-wrapper[aria-hidden="true"] {
+  opacity: 0;
+  pointer-events: none;
+}
+.search-form-wrapper[aria-hidden="false"] {
+  opacity: 1;
+  pointer-events: visible;
+}
+.search-form__input {
+  border: 0;
+  border-right: transparent;
+  transition: 0.2s;
+  background: hsl(213, 89%, 33%);
+  color: var(--white);
+}
+.search-form__input::placeholder {
+  color: var(--blue-200);
+}
+.search-form__submit {
+  position: relative;
+  padding-inline: 1rem;
+  /* transform: translateY(7px); */
+  cursor: pointer;
+}
+.search-form__input:focus {
+  outline: 0;
+  background-color: rgb(15, 106, 197);
+}
+.search-form__submit img {
+  padding-inline: 1rem;
+}
+
+/* wp search widget */
+
+/* wp-block-search__button-inside wp-block-search__icon-button  */
+.wp-block-search {
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.wp-block-search__button-inside {
+  padding: 1rem;
+  background-color: var(--neutral-200);
+}
+.wp-block-search__input-1 {
+}
+.wp-block-search__input {
+  padding: 0.7rem;
+}
+.wp-block-search__inside-wrapper {
+  border: 0;
+}
+.wp-block-search__button {
+  border: 0;
+  margin: 0;
+  background-color: var(--neutral-100);
+}
+
+/* has-icon wp-element-button */
+/* wp-block-search__button-inside wp-block-search__icon-button wp-block-search */

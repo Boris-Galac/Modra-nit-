@@ -1,0 +1,44 @@
+.kontakt-section {
+}
+.kontakt-row {
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.kontakt-inner-row {
+  flex: 1 1 400px;
+}
+.kontakt-row {
+}
+.kontakt__info {
+}
+.kontakt__list {
+}
+.kontakt__item {
+  gap: 1rem;
+}
+
+/* RADNO VRJEME section ////////////*/
+
+.radno-vrijeme-section {
+  padding-block: 4rem;
+}
+.radno-vrijeme__icon {
+  object-fit: contain;
+}
+.radno-vrijeme__row {
+  gap: 1rem;
+}
+.radno-vrijeme__row:nth-child(1) {
+  gap: 1rem;
+  background: #f3f3f3;
+  width: max-content;
+  padding: 1rem;
+  border-radius: 100vmax;
+  margin-bottom: 1rem;
+}
+.p-text {
+}
+.radno-vrijeme__time {
+}
+.radno-vrijeme__row {
+}

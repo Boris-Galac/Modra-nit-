@@ -1,0 +1,144 @@
+.modra-nit__wrapper {
+  gap: 4rem;
+}
+.modra-nit__row {
+  position: relative;
+}
+.modra-nit__row .p-text {
+  position: relative;
+}
+.modra-nit__row .h3--heading-block {
+  position: absolute;
+  background-color: var(--white);
+  border-radius: 100vmax 0 0 100vmax;
+  padding: 1rem;
+  border: 2px solid var(--neutral-200);
+  border-right: transparent;
+}
+.modra-nit__row .h3--heading-block::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 80%;
+  bottom: 1rem;
+  background: linear-gradient(to right, #000, #fff);
+}
+.modra-nit__row .h3--heading-block {
+  max-width: 23.75rem;
+}
+.row-1 .h3--heading-block {
+  width: 80%;
+  left: 20%;
+  top: 14rem;
+}
+.row-2 .h3--heading-block {
+  width: 80%;
+  left: 0;
+  top: 12rem;
+  border-radius: 0 100vmax 100vmax 0;
+  padding: 1rem;
+  border: 2px solid var(--neutral-200);
+  border-left: transparent;
+}
+.row-3 .h3--heading-block {
+  top: 14rem;
+  width: max-content;
+}
+.row-2 .h3--heading-block::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 80%;
+  bottom: 1rem;
+  background: linear-gradient(to right, #000, #fff);
+}
+.row-2 .p-text {
+  text-align: right;
+}
+
+@media (min-width: 42.5rem) {
+  .modra-nit__row .p-text {
+    max-width: 40rem;
+  }
+  .modra-nit__wrapper {
+    gap: 0;
+  }
+  .row-1 .p-text {
+    top: -10rem;
+  }
+  .row-2 {
+    margin-left: auto;
+  }
+  .row-2 .p-text {
+    top: -9rem;
+  }
+  .row-3 .p-text {
+    top: -6rem;
+  }
+}
+
+/* MODRE USLUGE section ////////// */
+
+.modre-usluge-section {
+  position: relative;
+  background-color: var(--primary-clr);
+  padding-block: 10rem;
+  clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
+}
+.modre-usluge-section::after {
+  content: "";
+  position: absolute;
+  background: url("/src/assets/images/modranit-usluge-logo.png") no-repeat;
+  background-size: contain;
+  bottom: 3rem;
+  right: 0rem;
+  width: 23rem;
+  height: 20rem;
+  z-index: 2;
+}
+.modre-usluge-section {
+  position: relative;
+  background-color: var(--primary-clr);
+  padding-block: 10rem;
+}
+.modre-usluge-section .h2--heading {
+  padding-inline: min(10vw, 5rem);
+}
+.modre-usluge__wrapper {
+  gap: 3rem;
+}
+.modre-usluge__wrapper * {
+  color: var(--white);
+}
+.modre-usluge__item strong {
+}
+.modre-usluge__item li {
+  font-weight: 100;
+}
+
+@media (min-width: 50rem) {
+  .modre-usluge-section {
+    clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
+  }
+  .modre-usluge__wrapper {
+    grid-auto-flow: column;
+  }
+  .modre-usluge-section::after {
+    right: 10rem;
+    width: 30rem;
+  }
+}
+
+/* USLUGE section //////////*/
+
+.usluge-section .h2--heading {
+}
+.usluge__wrapper {
+  gap: 2rem;
+}
+
+@media (min-width: 50rem) {
+  .usluge__wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(385px, 1fr));
+  }
+}

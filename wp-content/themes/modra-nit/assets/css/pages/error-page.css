@@ -1,0 +1,12 @@
+.error-main {
+  height: 48vh;
+}
+.error__wrapper {
+}
+.error-heading {
+  font-weight: 700;
+  font-size: clamp(3rem, 10vw, 5rem);
+}
+.error-subheading {
+  font-size: clamp(1rem, 3vw, 2rem);
+}

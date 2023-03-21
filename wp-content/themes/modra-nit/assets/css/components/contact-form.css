@@ -1,0 +1,117 @@
+.contact-form {
+  background-color: var(--neutral-100);
+  max-width: 35rem;
+}
+.contact-form__row {
+  display: grid;
+}
+.contact-form__input {
+  display: grid;
+  margin-bottom: 1rem;
+}
+.contact-form__input-element {
+  border: 1px solid var(--neutral-500);
+  border-radius: 3px;
+  transition: var(--time-transition-2);
+}
+.contact-form__input-element::placeholder {
+  color: var(--neutral-500);
+}
+.contact-form__input-element:focus {
+  outline: 1px solid var(--blue-500);
+  background-color: var(--neutral-200);
+}
+.contact-form__input-label {
+  margin-bottom: 0.5rem;
+}
+.contact-form__input-textarea {
+}
+.contact-form__input-submit {
+  font-family: inherit;
+  font-size: 20px;
+  background-color: var(--primary-clr);
+  color: var(--white);
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  border-radius: 100vmax;
+  overflow: hidden;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: 100%;
+  cursor: pointer;
+}
+.contact-form__input-submit:hover {
+  background-color: hsl(230, 53%, 55%);
+}
+
+.contact-form__input-submit span {
+  display: block;
+  margin-left: 0.3em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-form__input-submit svg {
+  display: block;
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.contact-form__input-submit:hover .svg-wrapper {
+  -webkit-animation: fly-1 0.6s ease-in-out infinite alternate;
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.contact-form__input-submit:hover svg {
+  -webkit-transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  -ms-transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.contact-form__input-submit:hover span {
+  -webkit-transform: translateX(1.7em);
+  -ms-transform: translateX(1.7em);
+  transform: translateX(1.7em);
+}
+
+.contact-form__input-submit:active {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+@-webkit-keyframes fly-1 {
+  from {
+    -webkit-transform: translateY(0.1em);
+    transform: translateY(0.1em);
+  }
+
+  to {
+    -webkit-transform: translateY(-0.1em);
+    transform: translateY(-0.1em);
+  }
+}
+
+@keyframes fly-1 {
+  from {
+    -webkit-transform: translateY(0.1em);
+    transform: translateY(0.1em);
+  }
+
+  to {
+    -webkit-transform: translateY(-0.1em);
+    transform: translateY(-0.1em);
+  }
+}

@@ -1,0 +1,25 @@
+.main-krugovi .h2--heading {
+  margin-inline: auto;
+}
+.krugovi-opis__wrapper {
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.krugovi-opis__row {
+  flex: 1 1 500px;
+}
+.krugovi-opis__kontakt-osobe {
+  background-color: var(--neutral-200);
+  gap: 1.5rem;
+}
+.krugovi-opis__kontakt-osoba {
+  background-color: hsl(217, 45%, 92%);
+  border-radius: 5px;
+  box-shadow: 0 2px 2px hsl(0, 0%, 75%);
+}
+.krugovi-aktivnosti__wrapper {
+  gap: 2rem;
+}
+.krugovi-opis-section .h3--heading {
+  text-transform: uppercase;
+}

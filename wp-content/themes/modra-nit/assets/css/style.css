@@ -1,0 +1,37 @@
+/* abstracts */
+
+@import "abstracts/variables.css";
+
+/* base */
+
+@import "base/colors.css";
+@import "base/spacing.css";
+@import "base/defaults.css";
+@import "base/typography.css";
+
+/* components */
+
+@import "components/header.css";
+@import "components/footer.css";
+@import "components/card.css";
+@import "components/slider-gallery.css";
+@import "components/search.css";
+@import "components/contact-form.css";
+@import "components/sidebar.css";
+@import "components/banner.css";
+@import "components/pagination.css";
+
+/* pages */
+
+@import "pages/front-page.css";
+@import "pages/usluge-page.css";
+@import "pages/kontakt-page.css";
+@import "pages/krugovi-page.css";
+@import "pages/all-news-page.css";
+@import "pages/error-page.css";
+@import "pages/search-page.css";
+
+/* utilities */
+
+@import "utilities/js-classes.css";
+@import "utilities/utilities.css";

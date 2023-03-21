@@ -1,0 +1,85 @@
+/* overlay */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9;
+  cursor: pointer;
+}
+.overlay[aria-hidden="false"] {
+  pointer-events: visible;
+  opacity: 1;
+  animation: overlay-open 0.5s forwards ease-in-out;
+}
+@keyframes overlay-open {
+  from {
+    background-color: hsla(0, 0%, 0%, 0);
+  }
+  to {
+    background-color: hsla(0, 0%, 0%, 0.6);
+  }
+}
+
+.overlay[aria-hidden="true"] {
+  pointer-events: none;
+  opacity: 0;
+  animation: overlay-close 0.5s forwards ease-in-out;
+}
+@keyframes overlay-close {
+  to {
+    background-color: hsla(0, 0%, 0%, 0);
+  }
+}
+
+/* REVEAL ON SCROLL */
+.left,
+.right {
+  opacity: 0;
+  transition: 2s;
+}
+.left {
+  transform: translatex(100%);
+}
+.right {
+  transform: translatex(-100%);
+}
+.show-left-right {
+  opacity: 1;
+  transform: translatex(0);
+}
+
+/* HEADER ON SCROLL */
+.header {
+  transition: var(--time-transition-3);
+}
+.header.active {
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.322);
+}
+
+/* SCROLL TO TOP BTN */
+
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background-color: hsl(209, 82%, 13%);
+  border-radius: 50%;
+  aspect-ratio: 1;
+  padding: 0.2rem;
+  scale: 1.8;
+  cursor: pointer;
+  z-index: 20;
+  transition: 0.2s;
+}
+.scroll-to-top-btn:hover {
+  background-color: hsl(209, 82%, 20%);
+  outline: 2px solid hsl(209, 82%, 80%);
+}
+.scroll-to-top-btn[aria-hidden="true"] {
+  opacity: 0;
+  pointer-events: none;
+}
+.scroll-to-top-btn[aria-hidden="false"] {
+  opacity: 1;
+  pointer-events: visible;
+}

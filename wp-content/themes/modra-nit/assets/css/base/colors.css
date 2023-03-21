@@ -1,0 +1,20 @@
+/* my colors */
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --neutral-100: hsl(207, 82%, 98%);
+  --neutral-200: hsl(208, 45%, 94%);
+  --neutral-300: hsl(209, 35%, 86%);
+  --neutral-400: hsl(211, 29%, 78%);
+  --neutral-500: hsl(209, 19%, 63%);
+  --neutral-600: hsl(209, 17%, 44%);
+  --neutral-700: hsl(211, 21%, 28%);
+  --neutral-800: hsl(210, 30%, 17%);
+  --neutral-900: hsl(210, 32%, 9%);
+
+  --primary-clr: hsl(230, 53%, 39%);
+  --blue-300: hsl(216, 99%, 71%);
+  --blue-400: hsl(216, 98%, 62%);
+  --blue-500: hsl(216, 98%, 52%);
+}

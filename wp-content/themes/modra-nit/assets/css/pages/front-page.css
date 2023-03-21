@@ -1,0 +1,322 @@
+.main {
+  position: relative;
+}
+
+/* HERO section /////////////*/
+
+/* hero animation */
+
+canvas {
+  position: absolute;
+  left: -9rem;
+  top: -5rem;
+  isolation: isolate;
+  z-index: 1;
+  transform: scale(0.7);
+}
+@media (min-width: 800px) {
+  canvas {
+    transform: scale(1.4);
+  }
+}
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(45deg, #2e4095 50%, #081c38 80%);
+  background-size: 200% 200%;
+  width: 100%;
+  animation: hero-background 4s ease infinite;
+}
+@keyframes hero-background {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.hero__showcase {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+}
+.hero__subheadline {
+  background-color: var(--black);
+  color: var(--white);
+  width: max-content;
+  font-size: 1.1rem;
+  padding: 0.3rem;
+  animation: intro-subheadline 2s forwards;
+}
+@keyframes intro-subheadline {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.hero-span__headline-wrapper {
+  overflow-y: hidden;
+}
+.hero__headings {
+  user-select: none;
+}
+.hero-span__headline {
+  background-color: var(--white);
+  color: var(--neutral-900);
+  font-size: clamp(2.5rem, 7vw, 6rem);
+  width: max-content;
+  padding-inline: 0.5rem;
+  overflow-y: hidden;
+  line-height: 1.4;
+}
+.hero__cta {
+  position: relative;
+  padding-block: 0.7rem;
+  padding-inline: 3rem;
+  background-color: var(--blue-400);
+  color: var(--white);
+  text-transform: uppercase;
+  border-radius: 100vmax;
+  overflow: hidden;
+  isolation: isolate;
+  letter-spacing: 1px;
+  transition: var(--time-transition-2);
+}
+.hero__cta:hover {
+  box-shadow: 0 0 1rem var(--blue-400);
+}
+.hero__cta::after {
+  content: "";
+  position: absolute;
+  background-color: var(--blue-300);
+  width: 100%;
+  inset: 0;
+  z-index: -1;
+  transition: var(--time-transition-2);
+  transform-origin: left;
+  transform: scaleX(0);
+  border-radius: 100vmax;
+}
+.hero__cta:hover::after {
+  transform: scaleX(1);
+}
+.hero-illustration {
+  position: absolute;
+  bottom: 10rem;
+  width: 40%;
+  right: 0;
+  animation: intro-animation 2s forwards ease-out;
+}
+@keyframes intro-animation {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.mouse-btn {
+  margin: 10px auto;
+  width: 20px;
+  height: 50px;
+  border: 3px solid rgba(255, 255, 255, 0.918);
+  border-radius: 20px;
+  display: flex;
+}
+.mouse-scroll {
+  display: block;
+  aspect-ratio: 1;
+  width: 8px;
+  background: linear-gradient(
+    170deg,
+    rgba(188, 214, 240, 0.918),
+    rgb(255, 255, 255)
+  );
+  border-radius: 50%;
+  margin: auto;
+  animation: scrolling13 1s linear infinite;
+}
+
+@keyframes scrolling13 {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+}
+.container_mouse {
+  position: absolute;
+  bottom: 5rem;
+  transform: translateX(-50%);
+  left: 50%;
+  animation: mouse-scroll 1s alternate infinite linear;
+  cursor: pointer;
+}
+@keyframes mouse-scroll {
+  from {
+    transform: translateY(0.5rem);
+  }
+  to {
+    transform: translateY(0rem);
+  }
+}
+
+/* O NAMA section /////////////*/
+
+.o-nama__text-block {
+  position: relative;
+  background-color: var(--neutral-100);
+}
+.o-nama__skew {
+  position: absolute;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 60%);
+  padding: 2rem;
+  background-color: var(--neutral-100);
+  bottom: -3.8rem;
+  left: 0;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .o-nama__inner-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .o-nama__img-wrapper {
+    height: 100%;
+  }
+  .o-nama__text-block {
+    background-color: var(--neutral-200);
+    position: relative;
+    padding: 1rem;
+    margin-block: 3rem;
+  }
+  .o-nama__skew {
+    right: -3.9rem;
+    top: 0;
+    bottom: 0;
+    width: 5%;
+    left: auto;
+    background-color: var(--neutral-200);
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%, 0% 100%);
+  }
+  .hero-illustration {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 30%;
+    right: 0;
+    width: min(35%, 40rem);
+  }
+  .hero__showcase {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 30%;
+    z-index: 3;
+  }
+  .nav__icon {
+    display: none;
+  }
+}
+
+/* NOVOSTI section ///////////*/
+
+.novosti-section {
+  position: relative;
+  isolation: isolate;
+}
+.novosti-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/wp-content/themes/modra-nit/assets/assets/images/novosti-modranit-img.jpg")
+    no-repeat center center/cover;
+  z-index: -2;
+}
+.novosti-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: hsla(0, 0%, 0%, 0.47);
+  z-index: -2;
+}
+.novosti__carousel {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.slider__wrapper {
+  overflow-x: hidden;
+  display: flex;
+  gap: 2rem;
+  margin-inline: auto;
+  width: 95%;
+  margin-left: 2rem;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 1rem;
+}
+.slide-btn {
+  background-color: var(--neutral-800);
+  position: absolute;
+  transition: var(--time-transition-2);
+  cursor: pointer;
+  z-index: 5;
+  height: 50%;
+  margin-block: auto;
+  border-radius: 100vmax;
+}
+.slide-btn:hover {
+  background-color: var(--neutral-600);
+  position: absolute;
+}
+.slide__left {
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.slide__right {
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/* PARTNERI section //////////// */
+
+.partneri-section {
+  padding-bottom: 8rem;
+  padding-top: 3rem;
+}
+.partneri__inner-wrapper {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.partneri__inner-wrapper img {
+  object-fit: contain;
+  width: min(40%, 150px);
+}
+
+@media (min-width: 800px) {
+  .partneri__inner-wrapper {
+    flex-direction: row;
+  }
+}

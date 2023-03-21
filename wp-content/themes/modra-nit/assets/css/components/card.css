@@ -1,0 +1,114 @@
+/* novosti card */
+
+.card {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0px 28px 36px rgba(36, 52, 71, 0.15);
+  min-width: 300px;
+  scroll-snap-align: start;
+  display: grid;
+  /* grid-template-rows: auto 16% auto; */
+}
+.card__img-link > img {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 4/3;
+}
+
+/* meta info */
+
+.meta-info {
+  background-color: var(--white);
+  gap: 0.5rem;
+}
+.meta-info__date {
+  gap: 0.5rem;
+  color: var(--neutral-600);
+  font-weight: 500;
+  width: max-content;
+}
+.meta-info__time {
+  padding: 0.2rem;
+}
+.meta-info__separator {
+  height: 1rem;
+  border-radius: 100vmax;
+  width: 2px;
+  background-color: var(--neutral-700);
+}
+.meta-info__category {
+  text-transform: capitalize;
+  background-color: var(--neutral-100);
+  border-radius: 100vmax;
+  border: 1px solid var(--neutral-300);
+  padding-inline: 1rem;
+  user-select: none;
+}
+.card__body {
+  background-color: var(--neutral-100);
+}
+.card__body > div {
+  gap: 0.5rem;
+}
+.link__read-more {
+  color: var(--primary-clr);
+  gap: 0.5rem;
+  padding: 0.5rem;
+  transition: var(--time-transition-3);
+}
+.link__read-more:hover {
+  gap: 1rem;
+  color: var(--blue-500);
+}
+
+/* usluge card */
+
+.usluge__card {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0px 28px 36px rgba(36, 52, 71, 0.15);
+  transition: 1s;
+}
+.usluge__card:hover {
+  scale: 1.1;
+}
+.usluge__img-wrapper img {
+  width: 100%;
+}
+.usluge__card-body {
+  gap: 1rem;
+}
+.usluge__card .h3--heading {
+  border-bottom: 1px solid var(--neutral-200);
+}
+.usluge__card .p-text {
+  line-height: 177%;
+}
+
+/* krugovi-aktivnosti card */
+
+.krugovi-aktivnosti__card {
+  background-color: var(--neutral-100);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  box-shadow: 0 3px 7px lightgray;
+}
+
+.krugovi-aktivnosti__row {
+  aspect-ratio: 1;
+}
+.krugovi-aktivnosti__card:nth-child(even)
+  .krugovi-aktivnosti__row:nth-child(1) {
+  order: 1;
+}
+.krugovi-aktivnosti__row:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+}
+.krugovi-aktivnosti__card .h3--heading {
+  align-self: flex-start;
+  text-transform: uppercase;
+}
