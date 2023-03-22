@@ -43,7 +43,9 @@
   color: var(--neutral-700);
   text-transform: uppercase;
 }
-
+.news-icon {
+  width: 20px;
+}
 .nav__link::after {
   content: "";
   position: absolute;

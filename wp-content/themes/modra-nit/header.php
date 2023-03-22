@@ -47,7 +47,7 @@
           <li class="nav__item flex-row-center">
             <img
               src="<?php echo get_theme_file_uri('/assets/assets/icons/news-icon.svg') ?>"
-              class="nav__icon"
+              class="nav__icon news-icon"
               alt="contact icon"
             /><a href="<?php echo site_url('blog') ?>" class="nav__link <?php if(is_blog()) echo 'curr-page'; ?>">vijesti</a>
           </li>
