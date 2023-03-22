@@ -22,56 +22,52 @@
                                 </html>";
 
                                 if (mail($to, $subject, $mailBody, $headers)) {
-                                    echo "<p class='success-message'>Hvala na poruci!</p>";
+                                    echo "<p class='mail-msg success-message'>Hvala na poruci!</p>";
                                 } else {
-                                    echo "<p class='error-message'>Došlo je do pogreške prilikom slanja poruke. Molimo pokušajte ponovno.</p>";
+                                    echo "<p class='mail-msg error-message'>Došlo je do pogreške prilikom slanja poruke. Molimo pokušajte ponovno.</p>";
                                 }
                             }
                             ?>
 
-<form class="contact-form p-1" method="post">
-                  <h4 class="h4--heading">kontaktirajte nas</h4>
-                  <br />
-                  <div class="contact-form__row">
-                    <div class="contact-form__input">
-                      <label class="contact-form__input-label" for="name"
-                        >Vaše ime i prezime</label
-                      >
-                      <input
-                        class="contact-form__input-element p-05"
-                        type="text"
-                        name="name"
-                        id="name"
-                        placeholder="John Doe"
-                      />
-                    </div>
-                    <div class="contact-form__input">
-                      <label class="contact-form__input-label" for="mail"
-                        >Vaš email</label
-                      >
-                      <input
-                        class="contact-form__input-element p-05"
-                        type="email"
-                        name="mail"
-                        id="mail"
-                        placeholder="mail@gmail.com"
-                      />
-                    </div>
-                  </div>
-                  <div class="contact-form__input">
-                    <label class="contact-form__input-label" for="mail"
-                      >Vaša poruka</label
-                    >
-                    <textarea
-                      class="contact-form__input-element p-05"
-                      name="message"
-                      id="message"
-                      cols="30"
-                      rows="10"
-                      placeholder="Ostavite svoju poruku..."
-                    ></textarea>
-                  </div>
-                  <button
+                            <form class="d-grid p-1" method="post">
+                                <div class="contact-form__input">
+                                    <label for="full-name">Ime i Prezime</label>
+                                    <input
+                                        type="text"
+                                        id="full-name"
+                                        name="full-name"
+                                        placeholder="John Smith"
+                                        required
+                                        aria-required="true"
+                                        class="contact-form__input-element"
+                                    />
+                                </div>
+                                <div class="contact-form__input">
+                                    <label for="email">Email:</label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="mail@gmail.com"
+                                        required
+                                        aria-required="true"
+                                        class="contact-form__input-element"
+                                    />
+                                </div>
+                                <div class="contact-form__input">
+                                    <label for="message">Vaša poruka:</label>
+                                    <textarea
+                                        id="message"
+                                        name="message"
+                                        rows="4"
+                                        placeholder="Ostavite nam poruku..."
+                                        required
+                                        role="textbox"
+                                        aria-required="true"
+                                        class="contact-form__input-element"
+                                    ></textarea>
+                                </div>
+                                              <button
                     type="submit"
                     class="contact-form__input-submit flex-center"
                     name="submit"
@@ -94,4 +90,4 @@
                     </div>
                     <span>Pošaljite upit</span>
                   </button>
-                </form>
+                            </form>

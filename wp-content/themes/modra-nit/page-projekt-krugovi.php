@@ -75,7 +75,7 @@
                   >
                 </div>
                 <div class="krugovi-opis__kontakt-osoba p-1">
-                  <h5>• voditelj projekta Sandra Zelić</h5>
+                  <h5>• voditeljica projekta Sandra Zelić</h5>
                   <a href="mailto:sandra.modranit@gmail.com"
                     >sandra.modranit@gmail.com</a
                   >

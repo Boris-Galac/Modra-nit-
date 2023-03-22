@@ -1,10 +1,10 @@
 {
-  "name": "tech-blog",
+  "name": "modra-nit",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postcss": "postcss assets/css/style.css --dir dist --watch"
+    "postcss": "postcss wp-content/themes/modra-nit/assets/css/style.css --dir wp-content/themes/modra-nit/dist --watch"
   },
   "keywords": [],
   "author": "",

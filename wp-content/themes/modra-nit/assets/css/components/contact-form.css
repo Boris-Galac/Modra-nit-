@@ -13,6 +13,7 @@
   border: 1px solid var(--neutral-500);
   border-radius: 3px;
   transition: var(--time-transition-2);
+  padding: 0.5rem;
 }
 .contact-form__input-element::placeholder {
   color: var(--neutral-500);
@@ -31,7 +32,7 @@
   font-size: 20px;
   background-color: var(--primary-clr);
   color: var(--white);
-  padding: 0.7em 1em;
+  padding: 0.4em 1em;
   padding-left: 0.9em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,4 +115,21 @@
     -webkit-transform: translateY(-0.1em);
     transform: translateY(-0.1em);
   }
+}
+
+/* notification msg contact form */
+
+.mail-msg {
+  padding: 1rem;
+  color: var(--neutral-800);
+  border-radius: 3px;
+  color: var(--white);
+}
+.success-message {
+  border: 1px solid rgb(52, 119, 52);
+  background-color: rgb(114, 193, 114);
+}
+.error-message {
+  border: 1px solid rgb(214, 82, 0);
+  background-color: rgb(199, 108, 108);
 }

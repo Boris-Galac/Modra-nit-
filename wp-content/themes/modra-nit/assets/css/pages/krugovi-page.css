@@ -13,9 +13,10 @@
   gap: 1.5rem;
 }
 .krugovi-opis__kontakt-osoba {
+  border-left: 2px solid var(--neutral-500);
   background-color: hsl(217, 45%, 92%);
   border-radius: 5px;
-  box-shadow: 0 2px 2px hsl(0, 0%, 75%);
+  box-shadow: 0 2px 2px hsl(0, 0%, 80%);
 }
 .krugovi-aktivnosti__wrapper {
   gap: 2rem;
